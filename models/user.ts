@@ -27,7 +27,7 @@ const User = mongoose.model(
   })
 )
 
-function validateUser(user) {
+function validateUser(user: object) {
   const schema = {
     name: Joi.string().min(3).max(50).required(),
     staffId: Joi.number().min(4).max(20).required(),
