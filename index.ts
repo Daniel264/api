@@ -1,5 +1,8 @@
+import Joi from 'joi'
+Joi.objectId = require('joi-objectid')(Joi)
+import mongoose from 'mongoose'
+import users from './routes/user'
 import express from 'express'
-
 const app = express()
 const port = 4000
 
