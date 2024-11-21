@@ -1,7 +1,7 @@
 import Joi from 'joi'
 Joi.object = require('joi-objectid')(Joi)
 import mongoose from 'mongoose'
-import users from './routes/user'
+import users from './routes/user' 
 import express from 'express'
 const app = express()
 
