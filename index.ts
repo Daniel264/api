@@ -5,6 +5,7 @@ import users from './routes/user'
 import express from 'express'
 const app = express()
 
+//connect to mongodb database
 mongoose
   .connect('mongodb://localhost/hexa')
   .then(() => console.log('Connected to MongoDB...'))
